@@ -137,7 +137,7 @@ public class Main {
         }
         */
 
-        // Exercice 4A
+        //Exercice 4A
         /*
         System.out.println("--- Exercice 4A ---");
         Scanner scanner = new Scanner(System.in);
@@ -925,14 +925,14 @@ public class Main {
             for(int i = 0; i<grille[0].length; i++){
                 grille[0][i]=' ';
             }
-            Thread.sleep(100);
+            Thread.sleep(200);
         }
 
          */
 
+
         //Sokoban
         /*
-
         //Création de la grille
         String[][] grille = new String[6][6];
 
@@ -1031,6 +1031,7 @@ public class Main {
 
          */
 
+
         //############## Examen ##############//
 
         //Exercice 1 : Un kilomètre à pied
@@ -1118,6 +1119,39 @@ public class Main {
         }
 
          */
+
+        //Bonus 2 : Sierpinski
+        /*
+        int lig= 32;
+        int div;
+        int ii;
+        int jj;
+        int max = 1;
+
+        while(max < lig){
+            max*=2;
+        }
+        for(int i = (lig-1) ; i >= 0 ; i--){
+            for(int j = 0 ; j <= (max-i-1); j++){
+                ii = i;
+                jj = j;
+                div = max;
+                while(div>1 && (ii+jj)<div){
+                    div /= 2;
+                    ii = ii%div;
+                    jj = jj%div;
+                }
+                if(div==1){
+                    System.out.print("*");
+                }else{
+                    System.out.print(" ");
+                }
+            }
+            System.out.print("\n");
+        }
+
+         */
+
 
     }
 
